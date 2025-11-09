@@ -1,0 +1,78 @@
+body {
+    background-color: #303030;
+    font-family: sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 640px;
+    height: 360px;
+    border-radius: 10px;
+    outline: 2px solid #303030;
+}
+.top {
+    display: flex;
+    justify-content: space-between; /* Dwuklan po lewej, linki po prawej */
+    align-items: center;
+    padding: 0px 10px;
+    /*margin-top: 10px;*/
+    margin-bottom: 20px;
+    background-color: #303030;
+    border-bottom: 1px solid grey;
+}
+#main {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.links {
+    display: flex;
+    gap: 10px;
+}
+.links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+.links a:hover {
+    color: #1E90FF;
+    transform: scale(1.05);
+}
+/* ARYKUŁY / LINKI NA STRONIE */
+.links-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #414141; /* poprawiony średnik */
+    padding: 20px;
+    margin: 20px auto;
+    width: fit-content;
+    border-radius: 10px;
+    outline: 2px solid #303030;
+}
+.links-page a {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+.links-page a:hover {
+    color: #303030;
+    transform: scale(1.01);
+}
+.foot {
+    border-top: 1px solid grey;
+    background-color: black;
+    display: flex;
+    margin: auto;
+    gap: 89.9%;
+    font-size: 12px;
+}
+/*#foot-div {
+    margin: auto;
+    display: flex;
+    font-size: 38px;
+    font-weight: bold;
+}*/
