@@ -1,31 +1,3 @@
-<?php
-session_start();
-include("db.php"); // połączenie z bazą danych
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = trim($_POST["username"]);
-    $password = trim($_POST["password"]);
-
-    if (empty($username) || empty($password)) {
-        echo "Uzupełnij wszystkie pola!";
-    } else {
-        $hashed = password_hash($password, PASSWORD_DEFAULT);
-
-        $stmt = $conn->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
-        $stmt->bind_param("ss", $username, $hashed);
-
-        if ($stmt->execute()) {
-            echo "<p>Konto utworzone! <a href='login.php'>Zaloguj się</a></p>";
-        } else {
-            echo "<p>Błąd: " . $stmt->error . "</p>";
-        }
-
-        $stmt->close();
-        $conn->close();
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>

@@ -16,6 +16,10 @@
             </div>
     </nav>
 
+    <video controls>
+        <source src="film.mp4" type="video/mp4">
+    </video>
+    
     <nav class="kontener">
         <div class="links-page">
             <a href="artykul1.html">Dwuklan z debiutancka plyta?</a>
@@ -39,6 +43,8 @@
             <a href="artykul1.html">trwaja prace nad debiutancka plyta</a>
         </div>
     </nav>
+
+    
 
 </body>
 </html>
